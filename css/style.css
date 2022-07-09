@@ -1,0 +1,134 @@
+html {
+    --red: #c80000;
+    --grey-black: #666;
+    --grey-white: #ccc;
+    font-family: 'Raleway', sans-serif;
+}
+.header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header__title {
+    background-color: var(--red);
+    color: white;
+    font-size: 2rem;
+    padding: 0.9rem;
+}
+.header__title__subtext {
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline;
+    margin-left: 0.7rem;
+}
+.header__subtitle {
+    text-align: center;
+    background-color: var(--grey-black);
+    color: var(--grey-white);
+    padding: 0.5rem;
+    font-weight: 400;
+}
+main {
+    padding-top: 5.5rem;
+    position: relative;
+}
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+}
+.shop__soldes {
+    background-color: var(--red);
+    color: white;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    font-size: .7rem;
+    padding: .6rem .5rem;
+    letter-spacing: -1px;
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    top: 410px;
+}
+.shop__product {
+    width: 30%;
+    border: 1px solid var(--grey-white);
+    margin: 0.4rem;
+    padding: 0.5rem;
+    position: relative;
+}
+.shop__product__discount {
+    background-color: var(--grey-black);
+    border: 4px solid var(--grey-white);
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: .2rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+}
+.shop__product__image {
+    width: 100%;
+}
+.shop__product__game {
+    color: var(--grey-white);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+.shop__product__title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid var(--grey-white);
+    margin: .2rem 0;
+}
+.shop__product__desc {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.shop__product__cart {
+    background-color: var(--red);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 80%;
+    margin: 0 -2% -2% -2%;
+}
+.shop__product__cart__add-cart {
+    font-size: 0.7rem;
+    padding: 1rem;
+    transition: background-color 0.2s;
+}
+.shop__product__cart__add-cart:hover {
+    background-color: var(--grey-black);
+}
+.shop__product__cart__price {
+    margin-right: .5rem;
+}
+.shop__product__cart__no-price {
+    margin: 0;
+    text-decoration: line-through;
+    font-weight: 400;
+}
+.shop__product__cart__actual-price {
+    margin: 0;
+    font-weight: 700;
+    padding-left: .2rem;
+}
+footer {
+    background-color: var(--grey-black);
+    color: var(--grey-white);
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0.8rem;
+}
